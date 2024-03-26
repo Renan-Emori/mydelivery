@@ -26,11 +26,11 @@ const Home = () => {
           Order from our Hanckpicked Favorites
         </h1>
         <div className="flex flex-wrap items-center justify-around gap-5">
-          {restaurant.map(() => <RestaurantCard />)}
+          {restaurant.map((value, index) => <RestaurantCard key={index} />)}
         </div>
       </section>
     </div>
   );
 };
 
-export default Home;
+export {Home};
